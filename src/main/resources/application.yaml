@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-template
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${MYSQL_URL}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true # ?? ?? ??
+    hibernate:
+      ddl-auto: update
