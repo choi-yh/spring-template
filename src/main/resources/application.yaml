@@ -12,6 +12,19 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    show-sql: true # ?? ?? ??
+    show-sql: true
     hibernate:
       ddl-auto: update
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
+
+jwt:
+  issuer: choi-yh-spring-template
+  secret_key: ${JWT_SECRET}
